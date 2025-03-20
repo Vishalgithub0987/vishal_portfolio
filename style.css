@@ -12,6 +12,8 @@
 .navbar{
     position: fixed;
     width: 100%;
+    z-index: 999;
+
     padding: 30px 0;
     /* background: #290907; */
     font-family: 'ubuntu', sans-serif;
@@ -29,9 +31,14 @@
     color: #ffffff;
 }
 
-/* .navbar .logo a span{
+.navbar.sticky .logo a span{
     color: #E6BF83;
-} */
+    transition: all 0.5s ease;
+}
+
+.navbar .logo a span{
+    color: #ffffff;
+}
 
 .navbar .menu li{
     list-style: none;
@@ -60,18 +67,33 @@
     color: #E6BF83;
 }
 
+/* ------------------------------------------------------------- */
+
+/* menu btn stylings */
+
+.menu-btn{
+    color: #ffffff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* ----------------------------------------------------- */
 /* home section stylings*/
 
 .home{
     display: flex;
-    background:url("images/b_banner.jpg") no-repeat center;
+    background:url("images/ban.jpg") no-repeat center;
     background-size: cover; 
     height: 102vh;
     color:#57473a;
     min-height: 500px;
-    font-family: 'ubuntu', sans-serif;
-
-    
+    font-family: 'ubuntu', sans-serif;   
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
 }
 
 .home .home-content .text-1{
@@ -92,6 +114,354 @@
 }
 
 .home .home-content .text-3 span{
-    color: #E6BF83;
+    color:#3d0c02;
     font-weight: 500;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: #E6BF83;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+
+  border-radius: 6px;
+  border: 2px solid #E6BF83;
+  transition: all 0.3s ease; 
+}
+
+.home .home-content a:hover{
+    background: none;
+    color: #57473a;
+}
+
+/* all similar content styling code  */
+
+section{
+    padding: 100px 0;
+}
+.about .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu' , sans-serif;
+}
+
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: -180px;
+    /* top: 20px; */
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #200907;
+    transform: translateX(-50%);
+}
+
+.about .title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -193px;
+    left: 50%;
+    font-size: 20px;
+    color: #3d0c02;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+/* about section styling */
+
+
+
+
+.about, .services{
+    font-family: 'poppins', sans-serif;
+}
+
+.about .title::after{
+    content: "who i am";
+    
+}
+
+.about .about-content, .services .serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+
+}
+
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right{
+    width: 45%;
+
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+    color: #3d0c02;
+}
+
+.about .about-content .right  p{
+    text-align: justify;
+}
+
+.about .about-content .right a{
+    display: inline-block;
+    background: #E6BF83;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #E6BF83;
+    transition: all 0.3s ease;
+
+}
+
+.about .about-content .right a:hover{
+    background: none;
+    color: #57473a;
+}
+
+
+/* services section start  */
+
+section .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu' , sans-serif;
+}
+
+.services{
+    background: #200907;
+    color: #ffffff;
+}
+
+.services .title::before{
+    background: #ffffff;
+
+}
+
+.services .title::after{
+    background: #3d0c02;
+    color: "what i provide";
+}
+
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #E6BF83;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover{
+    background:#57473a;
+}
+
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+
+}
+
+.services .serv-content .card:hover i{
+    color: #ffffff;
+}
+
+.services .serv-content .card i{
+    font-size: 50px;
+    color: #200907;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------- */
+/* responsive media query styling */
+@media (max-width:1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+
+       
+    }
+    
+}
+
+@media (max-width:991px){
+    .max-width{
+        padding: 0 50px;
+    }
+
+}
+@media (max-width:947px){
+    .menu-btn{ 
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #200907;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 70px;
+        
+    }
+    
+    .home .home-content .text-3{
+        font-size: 35px;
+        
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex:100%;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+        
+
+    
+}
+
+@media (max-width:690px){
+    .max-width{
+        padding: 0 23px;
+    }
+    
+    .home .home-content .text-2{
+        font-size: 60px;
+        
+    }
+    
+    .home .home-content .text-3{
+        font-size: 32px;
+        
+    }
+    .home .home-content a{
+        font-size: 20px;
+        /* padding: 9px 25px; */
+    }
+    .services .serv-content .card{
+        width: 100%;
+        
+    }
+     
+
+
+}
+
+@media (max-width:500px){
+    
+    .home .home-content .text-2{
+        font-size: 50px;
+        
+    }
+    
+    .home .home-content .text-3{
+        font-size: 27px;
+        
+    }
+
 }
