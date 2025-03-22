@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    
-    
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    
+    
+   
 </head>
 <body>
+    <div class="scroll-up-btn">
+        <span class="material-symbols-outlined">expand_less</span>
+    </div>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
             <ul class="menu">
-                <li><a href="#home" >Home</a></li>
-                <li><a href="#about" >About</a></li>
-                <li><a href="#services" >Services</a></li>
-                <li><a href="#skills" >Skills</a></li>
-                <li><a href="#projects" >Projects</a></li>
-                <li><a href="#contact" >Contact</a></li>
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#services" class="menu-btn" >Services</a></li>
+                <li><a href="#skills" class="menu-btn" >Skills</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
              <div class="menu-btn">
                 <i class="material-symbols-outlined">menu</i>
@@ -41,8 +54,8 @@
             <div class="home-content">
                 <div class="text-1">Hello, I'm </div>
                 <div class="text-2">Vishal Sangeeth</div>
-                <div class="text-3">And I'm a <span>Web Developer</span></div>
-                <a href="#">Hire me</a>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a href="mailto:vishalsangeeth71@gmail.com">Hire me</a>
             </div>
         </div>
     </section>
@@ -56,9 +69,9 @@
                 <img src="images/VISHAL.jpg" alt="vishal">
                </div>
                <div class="column right">
-                <div class="text">I'm Vishal Sangeeth and I"m a <span>Full stack Developer</span></div>
+                <div class="text">I'm Vishal Sangeeth and I"m a <span class="typing-2"></span></div>
                 <p>I am a Full Stack Developer with 8 months of hands-on experience in designing and build user-friendly web applications. My expertise lies in both front-end and back-end development, ensuring seamless functionality and engaging user experiences.On the front-end, I specialize in HTML, CSS, and JavaScript, creating responsive and visually appealing interfaces. On the back-end, I work with Python, Django, and Firebase, alongside database management using MySQL</p>
-                <a href="#">Download CV</a>
+                <a href="Resume/vishal.pdf" download="vishal.pdf">Download CV</a>
                </div>
             </div>
         </div>
@@ -106,7 +119,7 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My Technical Skills & Certificate</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus repellendus veritatis consequuntur explicabo! Nesciunt!</p>
+                    <p style="color:#C9A86A"; font-weight="500" >Proficient in HTML, CSS, JavaScript, Python, and MySQL. Skilled in creating responsive web applications and solving technical challenges.</p>
                     <a href="#" style="margin-left: 90px;">Read more...</a>
                 </div>
                 <div class="column right">
@@ -194,6 +207,75 @@
             </div>
         </div>
     </section>
+
+
+    <!-- contact page start  -->
+     <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title" style="color:#eeb55e;">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch:</div>
+                    <p>I am eager to apply my skills and grow professionally. Feel free to contact me for job opportunities, collaborations, or any professional inquiries.</p>
+                        
+                    <div class="icons">
+                        <div class="row">
+                            <span class="material-symbols-outlined">person</span>
+                            <div class="info">
+                                <div class="head">Name:</div>
+                                <div class="sub-title">Vishal Sangeeth V</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <div class="info">
+                                <div class="head">Address:</div>
+                                <div class="sub-title">Vellore, Tamil Nadu</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="material-symbols-outlined"> mail</span>
+                            <div class="info">
+                                <div class="head">Email:</div>
+                                <div class="sub-title">vishalsangeeth71@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="mailto:vishalsangeeth71@gmail.com" method="POST" enctype="text/plain">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" name="" id="" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" name="" id="" required>
+                            </div>
+                        </div>
+                            <div class="field">
+                                <input type="text" placeholder="subject" name="" id="" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" placeholder="Describe Project.." required ></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Send message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer>
+        <span>Created by <a href="https://www.linkedin.com/in/vishal2001/">Vishal Sangeeth</a> | <span class="material-symbols-outlined">copyright</span>2025 All rights reserved.</span>
+    </footer>
+
+
+    
 
 
     
