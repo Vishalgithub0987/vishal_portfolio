@@ -136,50 +136,15 @@
     color: #57473a;
 }
 
-/* all similar content styling code  */
+
+/* about section styling */
 
 section{
     padding: 100px 0;
 }
-.about .title{
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: 'ubuntu' , sans-serif;
-}
-
-.about .title::before{
-    content: "";
-    position: absolute;
-    bottom: -180px;
-    /* top: 20px; */
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #200907;
-    transform: translateX(-50%);
-}
-
-.about .title::after{
-    content: "who i am";
-    position: absolute;
-    bottom: -193px;
-    left: 50%;
-    font-size: 20px;
-    color: #3d0c02;
-    padding: 5px;
-    background: white;
-    transform: translateX(-50%);
-}
-
-/* about section styling */
 
 
-
-
-.about, .services{
+.about, .services,.skills .projects{
     font-family: 'poppins', sans-serif;
 }
 
@@ -188,7 +153,7 @@ section{
     
 }
 
-.about .about-content, .services .serv-content{
+.about .about-content, .services .serv-content, .skills .skills-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -244,6 +209,43 @@ section{
     color: #57473a;
 }
 
+.about .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu' , sans-serif;
+}
+
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: -180px;
+    /* top: 20px; */
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #200907;
+    transform: translateX(-50%);
+}
+
+.about .title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -193px;
+    left: 50%;
+    font-size: 20px;
+    color: #3d0c02;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+
+
+
+
 
 /* services section start  */
 
@@ -256,17 +258,19 @@ section .title{
     font-family: 'ubuntu' , sans-serif;
 }
 
-.services{
+.services, .projects{
     background: #200907;
     color: #ffffff;
 }
 
-.services .title::before{
+.services .title::before,
+.projects .title::before{
     background: #ffffff;
 
 }
 
-.services .title::after{
+.services .title::after,
+.projects .title::after{
     background: #3d0c02;
     color: "what i provide";
 }
@@ -311,6 +315,193 @@ section .title{
 
 
 }
+
+
+/* skills section styling  */
+
+.skills{
+    background:url("images/b_banner.jpg") no-repeat center;
+    background-size: cover;
+}
+
+
+
+
+.skills .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu' , sans-serif;
+}
+
+.skills .title::before{
+    content: "";
+    position: absolute;
+    bottom: -180px;
+    /* top: 20px; */
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #200907;
+    transform: translateX(-50%);
+}
+
+.skills .title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -193px;
+    left: 50%;
+    font-size: 20px;
+    color: #3d0c02;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+.skills .title::after{
+    content: "waht i know";
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: #494d5f;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #494d5f;
+    transition: all 0.3s ease;
+
+}
+
+.skills .skills-content .left a:hover{
+    background: none;
+    color: black;
+
+}
+
+
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+
+}
+
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background:#57473a;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    /* width: 80%; */
+    left: 0;
+    top: 0;
+    background:#E6BF83;
+}
+
+.skills-content .right .html::before{
+    width: 90%;
+    
+}
+.skills-content .right .css::before{
+    width: 85%;
+    
+}
+.skills-content .right .javascript::before{
+    width: 70%;
+    
+}
+.skills-content .right .python::before{
+    width: 80%;
+    
+}
+.skills-content .right .django::before{
+    width: 70%;
+    
+}
+.skills-content .right .sql::before{
+    width: 70%;
+    
+}
+
+
+/* projects styling start  */
+.projects .title::after{
+    content: "";
+}
+ .projects .carousel .card{
+    background: black;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+
+
+ }
+
+
+ .projects .carousel .card box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .projects .carousel .card .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+
+ }
+
+ .projects .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    align-items: center;
+    border: 5px solid #E6BF83;
+
+
+ }
+
+
+
+
+
+
 
 
 
@@ -420,7 +611,12 @@ section .title{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-        
+    
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+ 
 
     
 }

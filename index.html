@@ -12,6 +12,9 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
     <nav class="navbar">
@@ -22,7 +25,7 @@
                 <li><a href="#about" >About</a></li>
                 <li><a href="#services" >Services</a></li>
                 <li><a href="#skills" >Skills</a></li>
-                <li><a href="#teams" >Teams</a></li>
+                <li><a href="#projects" >Projects</a></li>
                 <li><a href="#contact" >Contact</a></li>
             </ul>
              <div class="menu-btn">
@@ -62,7 +65,7 @@
     </section>
 
     <!-- services section start  -->
-    <section class="services" id="Services" >
+    <section class="services" id="services" >
         <div class="max-width">
             <h2 class="title">My Services</h2>
             <div class="serv-content">
@@ -70,7 +73,7 @@
                     <div class="box">
                         <i class="fa fa-paint-brush"></i>
                         <div class="text">Web Developer</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corrupti totam enim cumque ipsa eum.</p>
+                        <p>Crafting responsive and visually stunning websites with a focus on user experience and performance. I turn ideas into interactive, functional web solutions.</p>
                     </div>
                 </div>
 
@@ -78,7 +81,7 @@
                     <div class="box">
                         <i class="fa fa-cogs"></i>
                         <div class="text">Backend Developer</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corrupti totam enim cumque ipsa eum.</p>
+                        <p>Building robust and scalable server-side applications that ensure seamless data handling, security, and efficiency for your digital products.</p>
                     </div>
                 </div> 
 
@@ -86,12 +89,109 @@
                     <div class="box">
                         <i class="fa fa-code"></i>
                         <div class="text">App Developer</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corrupti totam enim cumque ipsa eum.</p>
+                        <p>Designing and developing high-performance mobile applications that deliver intuitive experiences on both iOS and Android platforms.</p>
                     </div>
                 </div>
             </div>
              
             
+        </div>
+    </section>
+
+
+    <!-- skills section start  -->
+     <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My Skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My Technical Skills & Certificate</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus repellendus veritatis consequuntur explicabo! Nesciunt!</p>
+                    <a href="#" style="margin-left: 90px;">Read more...</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line javascript"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python</span>
+                            <span>80%</span>
+                        </div>
+                        <div class=" line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Django</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line django"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>SQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line sql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- projects section start  -->
+
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/p11.jpg" alt="">
+                        <div class="text">Itelligent Traffic Management System</div>
+                        <p>Developed and implemented deep learning algorithms for helmet prediction,Traffic signal violation,Number plate identification and Cell phone using traking.Implemented object detection models such as YOLO (You Only Look Once) to identify and track vehicles,pedestrians, and other objects on the road.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/p22.jpg" alt="">
+                        <div class="text">Healthcare Management <br> System</div>
+                        <p>Collaborated with a team of three on a capstone project using PHP, MySQL, HTML, CSS, and JavaScript. Developed Doctor and Patient login systems, tracked doctor availability, and created a Doctor database. Implemented core functionalities to manage doctor schedules and patient information.Using web technologies.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/p33.jpg" alt="">
+                        <div class="text">E-Commerce Website</div>
+                        <p>Developed an e-commerce website using Python and the Django framework. Implemented features such as product listing, user authentication, shopping cart, and order management. Utilized Django’s MVC architecture for efficient development and database integration. Ensured a responsive and user-friendly interface for seamless customer experience and optimized website.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/p44.jpg" alt="">
+                        <div class="text">Portfolio</div>
+                        <p>Developed a responsive portfolio website using HTML, CSS, JavaScript, and Bootstrap CDN. Showcased projects, skills, and professional achievements with an interactive and user-friendly design. Implemented smooth navigation, optimized performance, and ensured cross-browser compatibility to enhance user experience and present a professional online presence effectively.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
